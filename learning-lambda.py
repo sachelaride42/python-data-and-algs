@@ -43,6 +43,7 @@ def main():
             category = input('Enter category to filter: ')
             print(f'\nExpenses for {category}:')
             expenses_from_category = filter_expenses_by_category(expenses, category)
+            print('Tipo filtro: ', type(expenses_from_category))
             print_expenses(expenses_from_category)
 
         elif choice == '5':
